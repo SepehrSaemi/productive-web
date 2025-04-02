@@ -1,0 +1,16 @@
+{
+    "name": "ProductiveWeb",
+    "description": "Block distractions, regain focus, and take control of your browsing experience.",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "action": {
+        "default_icon": "assets/logo/logo.png",
+        "default_popup": "build/popup/popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
