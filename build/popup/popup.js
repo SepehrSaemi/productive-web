@@ -1,7 +1,7 @@
 const platformLogoEl = document.querySelector("#platform-logo");
 const platformNameEl = document.querySelector("#platform-name");
-const unhookTab = document.querySelector("#unhook-tab");
-const controlerTabsContent = document.querySelectorAll(".tab-content");
+const unhookTabEl = document.querySelector("#unhook-tab");
+const tabsContentEl = document.querySelectorAll(".tab-content");
 
 const supportedPlatforms = ["Youtube"];
 
@@ -32,10 +32,10 @@ function upperCaseFirstLetter(word) {
 }
 
 function loadYoutubeContent() {
-    unhookTab.classList.remove("tab-disabled");
+    unhookTabEl.classList.remove("tab-disabled");
 
     // Load Appearance tab content
-    controlerTabsContent[0].innerHTML = `
+    tabsContentEl[0].innerHTML = `
         <div class="mb-1 max-h-96 overflow-y-scroll px-2.5">
             <p class="text-neutral-content text-base font-medium">General</p>
             <span class="mt-1 flex items-center justify-between pl-5">
